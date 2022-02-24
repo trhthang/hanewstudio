@@ -1,0 +1,84 @@
+@import 'media-queries';
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+$beige: #FDFBF8;
+$lightgrey-nav: #EFEFEF;
+$border-nav: #9A9A9A;
+$lightgrey: #CFD2D2;
+$darkgrey: #171c20;
+$gold: #E8CE7A; //#EB9D00;
+$gold2: #FFD559;
+
+//----------------------------------------------------------
+// 0. General
+//----------------------------------------------------------
+html, body{
+  height: 100%;
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+  a{
+    color: $darkgrey;
+  }
+}
+//----------------------------------------------------------
+// 1. Nav
+//----------------------------------------------------------
+nav {
+  border-radius: 0;
+  padding: 10px;
+  z-index: 1;
+  background-color: white;
+  border: transparent;
+  .fa-bars {
+    color: #666666;
+  }
+}
+#main-nav li{
+  padding: 15px 14px 0 14px;
+}
+#main-nav .nav-a {
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 3px 5px;
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+  color: #666666;
+  &:hover{
+    border-bottom: 1px solid #666666;
+    color: #666666;
+    background-color: transparent;
+  }
+  &:focus{
+    border-bottom: 1px solid #666666;
+    color: #666666;
+    background-color: transparent;
+  }
+}
+//----------------------------------------------------------
+// 2. Gallery
+//----------------------------------------------------------
+.gallery{
+	.item{
+		img{
+			height: 600px;
+		}
+	}
+	.slick-slide{
+		margin: 0 50px;
+	}
+	.slick-prev{
+		left: 80px;
+		z-index: 2;
+	}
+	.slick-next{
+		right: 100px;
+		z-index: 2;
+	}
+	.slick-prev:before, .slick-next:before{
+		font-size: 40px;
+	}
+}
