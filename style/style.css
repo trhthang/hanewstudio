@@ -629,6 +629,7 @@ footer {
 @media (max-width: 500px) {
   body {
     background-position: 63% 0;
+    background-attachment: scroll;
   }
 
   #main-page .logo {
