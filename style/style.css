@@ -533,6 +533,7 @@ footer {
 
   #offert {
     padding-bottom: 20px;
+    background-attachment: scroll;
   }
 
   #offert .container div {
